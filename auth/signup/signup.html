@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+
+  <main id="mainDiv">
+    <div class="container">
+      <div class="form-container">
+        <div class="form-toggle">
+          <button id="login-toggle">Login</button>
+          <button id="signup-toggle">Sign Up</button>
+        </div>
+
+        <form id="signup-form" class="form">
+          <h2>Sign Up</h2>
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" required>
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" required>
+          <label for="age">Age</label>
+          <input type="number" id="age" required>
+          <label for="profile-image">Profile Image</label>
+          <input type="file" id="profile-image" accept="image/*">
+          <label for="signup-email">Email</label>
+          <input type="email" id="signup-email" required>
+          <label for="mobile">Mobile No.</label>
+          <input type="text" id="mobile" maxlength="11" pattern="\d{11}" required>
+          <label for="signup-password">Password</label>
+          <input type="password" id="signup-password" required>
+          <label for="confirm-password">Re-Enter Password</label>
+          <input type="password" id="confirm-password" required>
+          <button type="submit" id="signupUserBtn">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+
+  <div class="loader" id="loader"></div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+  <script src="signup.js" type="module"></script>
+  <!-- <script src="./app.js" type="module"></script> -->
+</body>
+
+</html>

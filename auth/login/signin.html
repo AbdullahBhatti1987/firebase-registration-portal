@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+
+  <main id="mainDiv">
+    <div class="container">
+      <div class="form-container">
+        <div class="form-toggle">
+          <button id="login-toggle">Login</button>
+          <button id="signup-toggle">Sign Up</button>
+        </div>
+
+        <form id="login-form" class="form">
+          <h2>Login</h2>
+          <label for="login-email">Email</label>
+          <input type="email" id="login-email" required>
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" required>
+          <button type="submit" id="signinUser">Login</button>
+        </form>
+
+      </div>
+    </div>
+  </main>
+
+
+  <div class="loader" id="loader"></div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+  <script src="signin.js" type="module"></script>
+  <!-- <script src="./app.js" type="module"></script> -->
+</body>
+
+</html>
